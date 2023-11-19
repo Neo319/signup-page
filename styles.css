@@ -1,5 +1,49 @@
 /* * {border: 2px solid red} */
 
+
+
+
+
+header > div {
+    
+    background-color: #292929da;
+    background-image: url("images/s-well-oj0zeY2Ltk4-unsplash.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: 100vw;
+    height: 50vh;
+    max-height: calc(100vw * 0.66);
+    width: 100vw;
+    color: white;
+    position: relative;
+}
+
+#overlay {
+    position:absolute;
+    left: 1rem;
+    top: 0;
+    height: 50vh;
+    max-height: inherit;
+    width: 40vw;
+    background-color: #00000090;
+    color: white;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#overlay img {
+    width: 3rem;;
+    height:auto;
+
+}
+
 form {
     display:flex;
     flex-flow: column nowrap;
@@ -15,4 +59,8 @@ form {
 label {
     margin-bottom: 3px;
 
+}
+
+#main {
+    background-color: white;;
 }

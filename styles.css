@@ -109,10 +109,28 @@ label {
 
 input {
     border: 1px solid #808080;
-    font-size: 1.1em;    
+    font-size: 1.1em; 
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #808080;
+
 }
 input:invalid {
-    border: 2px solid red;
+    border: 1px solid red;
+}
+
+input:invalid::after {
+    content: "here!!";
+}
+
+input:hover {
+    background-color: #e2e2e2;
+}
+
+input:focus {
+    border: 1px solid #44a5a8;
+    box-shadow: 0px 2px 15px;
 }
 
 #main {
@@ -147,6 +165,13 @@ h4 {
     
 }
 
+.notif {
+    font-size: 0.8rem;
+    /* text-align: center;  */
+    display:table;
+    margin: 0 auto;
+}
+
 form {
     background-color: white;
 }
@@ -174,9 +199,7 @@ button:hover {
     background-color: #2f7174;
 }
 
-input:hover {
-    background-color: #e2e2e2;
-}
+
 
 #button a {
     color: #44a5a8
@@ -219,6 +242,19 @@ input:hover {
     #shaded h3 {
         position: absolute;
         top: 10px;
+    }
+
+    #shaded span {
+        position: absolute;
+        top: 50px;
+        font-size: 0.8rem;
+    }
+
+    #shaded>div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
     }
 
 

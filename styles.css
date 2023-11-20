@@ -75,6 +75,7 @@ h4 p {
 h3 {
     text-align: center;
 }
+
 #overlay img {
     width: 3rem;
     ;
@@ -177,3 +178,38 @@ button {
     /* margin-bottom: 2rem; */
 }
 /* struggling to get the shadow to appear over the button div... */
+
+@media only screen and (min-width: 700px) {
+    /* * {border: 2px solid red;} */
+    #overlay h1 {
+        font-size: 2.4em;
+    }
+
+    #overlay img{
+        width: 5rem;
+    }
+
+    h4  {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .names, .info {
+        width: 25vw;
+    }
+
+    #shaded {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        position: relative;
+        padding-top: 3rem;
+    }
+
+    #shaded h3 {
+        position: absolute;
+        top: 10px;
+    }
+
+
+}

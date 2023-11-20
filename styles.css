@@ -1,11 +1,10 @@
 @font-face {
     font-family: "Norse";
-    src: url("signup-page/fonts/Norse-Bold.otf")
+    src: url("signup-page/fonts/Norse-Bold.otf") format("opentype");
 }
 
 * {
     font-family: "Norse", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family:
 }
 
 
@@ -45,10 +44,22 @@ header>div {
     color: white;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     align-items: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+#overlay p {
+    font-size: 0.7rem;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    
+}
+#overlay a {
+    color:white;
 }
 
 h1 {
@@ -78,8 +89,16 @@ form {
 }
 
 label {
+    margin-top: 6px;
     margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #808080;
+    font-weight: 700;
+}
 
+input {
+    border: 1px solid #808080;
 }
 
 #main {
@@ -137,6 +156,11 @@ button {
     font-size: larger;
     border-radius: 8px;
     margin: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#button a {
+    color: #44a5a8
 }
 
 #shaded {

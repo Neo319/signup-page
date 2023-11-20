@@ -108,11 +108,11 @@ label {
 
 input {
     border: 1px solid #808080;
+    font-size: 1.1em;
 }
 
 #main {
     background-color: white;
-    ;
 }
 
 h4 {
@@ -166,6 +166,14 @@ button {
     border-radius: 8px;
     margin: 2rem;
     margin-bottom: 0.5rem;
+}
+
+button:hover {
+    background-color: #2f7174;
+}
+
+input:hover {
+    background-color: #e2e2e2;
 }
 
 #button a {
